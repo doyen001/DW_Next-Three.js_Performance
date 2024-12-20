@@ -8,7 +8,7 @@ import Marquee from "react-fast-marquee";
 // Register GSAP plugins
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
-export const SectionKPI = () => {
+const SectionKPI = () => {
 
     const subheadlineBoxRef = useRef()
     const titleRef = useRef()
@@ -101,9 +101,4 @@ export const SectionKPI = () => {
     );
 };
 
-
-
-
-
-
-
+export default SectionKPI;

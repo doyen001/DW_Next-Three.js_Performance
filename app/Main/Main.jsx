@@ -1,18 +1,41 @@
 "use client";
-import { ReactLenis, useLenis } from 'lenis/react'
-import { SectionHero } from "./SectionHero";
-import { SectionFooter } from "./SectionFooter";
-import { SectionShowreel } from "./SectionShowreel";
-import { SectionTestimonials } from "./SectionTestimonials";
-import { SectionTechstack } from "./SectionTechstack";
-import { SectionFlower } from "./SectionFlower";
-import { SectionServices } from "./SectionServices";
-import { SectionProjects } from "./SectionProjects";
-import { SectionProjectsMobile } from "./SectionProjectsMobile";
-import { SectionKPI } from "./SectionKPI";
-import "./main.css";
 import { useEffect, useLayoutEffect, useState } from 'react';
 import { useProgress } from "@react-three/drei";
+import dynamic from 'next/dynamic';
+
+import { ReactLenis, useLenis } from 'lenis/react'
+import { SectionHero } from "./SectionHero";
+
+import "./main.css";
+
+const SectionShowreel = dynamic(() => import("./SectionShowreel"), {
+  ssr: true,
+});
+const SectionFooter = dynamic(() => import("./SectionFooter"), {
+  ssr: true,
+});
+const SectionTestimonials = dynamic(() => import("./SectionTestimonials"), {
+  ssr: true,
+});
+const SectionTechstack = dynamic(() => import("./SectionTechstack"), {
+  ssr: true,
+});
+const SectionFlower = dynamic(() => import("./SectionFlower"), {
+  ssr: true,
+});
+const SectionServices = dynamic(() => import("./SectionServices"), {
+  ssr: true,
+});
+const SectionProjects = dynamic(() => import("./SectionProjects"), {
+  ssr: true,
+});
+const SectionProjectsMobile = dynamic(() => import("./SectionProjectsMobile"), {
+  ssr: true,
+});
+const SectionKPI = dynamic(() => import("./SectionKPI"), {
+  ssr: true,
+});
+
 
 const Main = () => {
 

@@ -6,7 +6,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
-export const SectionFlower = () => {
+const SectionFlower = () => {
 
     useEffect(() => {
         let frameCount = 300,
@@ -150,3 +150,5 @@ export const SectionFlower = () => {
     </section>
   );
 };
+
+export default SectionFlower;

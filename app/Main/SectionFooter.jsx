@@ -8,7 +8,7 @@ import { Instagram, Linkedin, Twitter } from "lucide-react";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
-export const SectionFooter = () => {
+const SectionFooter = () => {
 
   const topRef1 = useRef();
   const topRef2 = useRef();
@@ -80,3 +80,5 @@ export const SectionFooter = () => {
     </section>
   );
 };
+
+export default SectionFooter;
