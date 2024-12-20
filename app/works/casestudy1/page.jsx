@@ -2,7 +2,7 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { ReactLenis } from 'lenis/react'
 import "../works.css";
-import { SectionFooter } from "../../Main/SectionFooter";
+import SectionFooter from "../../Main/SectionFooter";
 import gsap from "gsap";
 import { TextPlugin } from 'gsap/TextPlugin';
 import { SplitText } from "gsap/all";

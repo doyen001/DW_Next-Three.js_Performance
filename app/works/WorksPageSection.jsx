@@ -5,8 +5,7 @@ import "./works.css";
 import { PrevButton, NextButton, usePrevNextButtons} from "../Main/Carousel/EmblaCarouselArrowButtons"
 import useEmblaCarousel from "embla-carousel-react"
 import { ArrowUpRight, Zap } from "lucide-react";
-import { SectionFooter } from "../Main/SectionFooter";
-import { usePathname, useRouter } from 'next/navigation';
+import SectionFooter from "../Main/SectionFooter";
 import gsap from "gsap";
 import SplitText from "gsap/src/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";

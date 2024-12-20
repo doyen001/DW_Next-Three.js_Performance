@@ -1,7 +1,7 @@
 "use client";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { ReactLenis } from 'lenis/react'
-import { SectionFooter } from "../Main/SectionFooter";
+import  SectionFooter  from "../Main/SectionFooter";
 import gsap from "gsap";
 import { TextPlugin } from 'gsap/TextPlugin';
 import { SplitText } from "gsap/all";
@@ -9,7 +9,7 @@ import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(SplitText, ScrollTrigger, TextPlugin);
 
-export const AboutPageSection = () => {
+const AboutPageSection = () => {
     // ANIMATIONS
 
     const titleRef = useRef()
@@ -203,3 +203,5 @@ export const AboutPageSection = () => {
     </ReactLenis>
   );
 };
+
+export default AboutPageSection;

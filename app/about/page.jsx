@@ -1,5 +1,5 @@
 import "./about.css";
-import { AboutPageSection } from "./AboutPageSection";
+import  AboutPageSection  from "./AboutPageSection";
 
 export const metadata = {
   title: 'Dialedweb | About Us',
