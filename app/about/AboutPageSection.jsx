@@ -152,7 +152,7 @@ const AboutPageSection = () => {
                     </div>
                     <div className="about-sticky-item-right">
                         <div className="about-sticky-item-right-imagebox">
-                            <Image src="/images/mockup4.webp" className="about-sticky-item-right-image" alt="" />
+                            <Image src="/images/mockup4.webp" className="about-sticky-item-right-image" alt="" width={100} height={100}/>
                         </div>
                     </div>
                 </div>
@@ -166,7 +166,7 @@ const AboutPageSection = () => {
                     </div>
                     <div className="about-sticky-item-right">
                         <div className="about-sticky-item-right-imagebox">
-                            <Image src="/images/mockup12.webp" className="about-sticky-item-right-image" alt="" />
+                            <Image src="/images/mockup12.webp" className="about-sticky-item-right-image" alt="" width={100} height={100}/>
                         </div>
                     </div>
                 </div>
@@ -180,7 +180,7 @@ const AboutPageSection = () => {
                     </div>
                     <div className="about-sticky-item-right">
                         <div className="about-sticky-item-right-imagebox">
-                            <Image src="/images/mockup7.webp" className="about-sticky-item-right-image" alt="" />
+                            <Image src="/images/mockup7.webp" className="about-sticky-item-right-image" alt="" width={100} height={100}/>
                         </div>
                     </div>
                 </div>
@@ -194,7 +194,7 @@ const AboutPageSection = () => {
                     </div>
                     <div className="about-sticky-item-right">
                         <div className="about-sticky-item-right-imagebox">
-                            <Image src="/images/mockup11.webp" className="about-sticky-item-right-image" alt="" />
+                            <Image src="/images/mockup11.webp" className="about-sticky-item-right-image" alt="" width={100} height={100}/>
                         </div>
                     </div>
                 </div>

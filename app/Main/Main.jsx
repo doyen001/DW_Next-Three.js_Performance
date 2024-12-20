@@ -69,7 +69,7 @@ const Main = () => {
       </div>
       <SectionHero />
       <div className="normal-padding" />
-      {/* <SectionShowreel />
+      <SectionShowreel />
       <div className="border-padding">
         <div className="section-border"></div>
       </div>
@@ -86,7 +86,7 @@ const Main = () => {
       <div className="normal-padding" />
       <SectionFlower />
       <div className="normal-padding" />
-      <SectionFooter /> */}
+      <SectionFooter />
     </ReactLenis>
   );
 };

@@ -76,19 +76,19 @@ const SectionShowreel = () => {
         </div>
         <div className="showreel-content-row">
           <div className="showreel-content-row-item opacity-blur" ref={showreelItemRef1} >
-            <Image src="/logos/awwwards.svg" className="showreel-content-row-item-image" alt="" />
+            <Image src="/logos/awwwards.svg" className="showreel-content-row-item-image" alt="" width={100} height={100} />
             <div className="showreel-content-row-item-grid" />
           </div>
           <div className="showreel-content-row-item opacity-blur" ref={showreelItemRef2} >
-            <Image src="/logos/cssbestui.svg" className="showreel-content-row-item-image" alt="" />
+            <Image src="/logos/cssbestui.svg" className="showreel-content-row-item-image" alt="" width={100} height={100}/>
             <div className="showreel-content-row-item-grid" />
           </div>
           <div className="showreel-content-row-item opacity-blur" ref={showreelItemRef3} >
-            <Image src="/logos/cssbestinnovation.svg" className="showreel-content-row-item-image" alt="" />
+            <Image src="/logos/cssbestinnovation.svg" className="showreel-content-row-item-image" alt="" width={100} height={100}/>
             <div className="showreel-content-row-item-grid" />
           </div>
           <div className="showreel-content-row-item opacity-blur" ref={showreelItemRef4} >
-            <Image src="/logos/cssbestux.svg" className="showreel-content-row-item-image" alt="" />
+            <Image src="/logos/cssbestux.svg" className="showreel-content-row-item-image" alt="" width={100} height={100}/>
             <div className="showreel-content-row-item-grid" />
           </div>
         </div>
