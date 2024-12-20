@@ -43,12 +43,13 @@ export const SectionHero = () => {
     if (playAnimation) {
 
       gsap.set(titleRef.current, { opacity: 1 })
+      gsap.set(descriptionRef.current, { opacity: 1, filter: 'blur(0px)' });
 
       const titleSplit = new SplitText(titleRef.current, { type: "chars" });
       gsap.fromTo(titleSplit.chars, { 'will-change': 'opacity, transform', filter: 'blur(8px)', opacity: 0, yPercent: 50 }, { delay: 0.4, opacity: 1, filter: 'blur(0px)', yPercent: 0, stagger: 0.02, duration: 0.75, ease: "power1" });
 
       // description text animation
-      gsap.to(descriptionRef.current, { opacity: 1, filter: 'blur(0px)', duration: 1, delay: 0.9 })
+      gsap.from(descriptionRef.current, { opacity: 0, filter: 'blur(10px)', duration: 0.7, delay: 0.5 });
 
       // buttons animation
       gsap.to(buttonRef1.current, { delay: 1.1, opacity: 1, filter: 'blur(0px)', duration: 0.5, ease: "power1" })
