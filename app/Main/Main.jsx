@@ -63,8 +63,8 @@ const Main = () => {
   return (
     <ReactLenis root>
       <div className={`initial-loading-screen ${fadeOut ? "fade-out" : ""}`} >
-        <div className="loading-image-box" >
-          <Image src="/images/loading.gif" className="loading-image" alt="Loading Image" width={100} height={100} />
+        <div className="loading-image-box">
+          <Image src="/images/loading.gif" className="loading-image" alt="Loading Image" width={240} height={240} quality={50} />
         </div>
       </div>
       <SectionHero />
