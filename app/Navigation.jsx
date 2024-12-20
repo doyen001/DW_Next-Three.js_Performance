@@ -2,15 +2,13 @@
 "use client";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
-import Link from "next/link";
-import { useRouter, usePathname } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 
 export const Navigation = () => {
-
     // ANIMATIONS
-
+    const router = useRouter();
     const navigationBar = useRef()
     const navigationBarCenter = useRef()
     const navigationBarCenterRef1 = useRef()
@@ -30,10 +28,6 @@ export const Navigation = () => {
 
     // NAVIGATION
 
-    const router = useRouter();
-    const pathname = usePathname();
-    let isAnimating = false;
-  
     const handleNavigate = (path) => {
         router.push(path);
     };
@@ -42,7 +36,7 @@ export const Navigation = () => {
     <div className="navigation-wrapper">
         <div className="navigation-inside" ref={navigationBar} >
             <div className="navigation-inside-left">
-                <img src="/images/dwlogonew2.webp" className="navigation-inside-left-image" alt="" />
+                <Image src="/images/dwlogonew2.webp" className="navigation-inside-left-image" alt="" width={100} height={100} />
             </div>
             <div className="navigation-inside-big" ref={navigationBarCenter} >
                 <p className="small-description white hover-text-white opacity" ref={navigationBarCenterRef1} onClick={() => handleNavigate('/')} >Home</p>

@@ -1,11 +1,13 @@
 "use client";
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
+import Image from "next/image";
 import { ReactLenis } from 'lenis/react'
-import  SectionFooter  from "../Main/SectionFooter";
 import gsap from "gsap";
 import { TextPlugin } from 'gsap/TextPlugin';
 import { SplitText } from "gsap/all";
 import { ScrollTrigger } from "gsap/all";
+
+import  SectionFooter  from "../Main/SectionFooter";
 
 gsap.registerPlugin(SplitText, ScrollTrigger, TextPlugin);
 
@@ -150,7 +152,7 @@ const AboutPageSection = () => {
                     </div>
                     <div className="about-sticky-item-right">
                         <div className="about-sticky-item-right-imagebox">
-                            <img src="/images/mockup4.webp" className="about-sticky-item-right-image" alt="" />
+                            <Image src="/images/mockup4.webp" className="about-sticky-item-right-image" alt="" />
                         </div>
                     </div>
                 </div>
@@ -164,7 +166,7 @@ const AboutPageSection = () => {
                     </div>
                     <div className="about-sticky-item-right">
                         <div className="about-sticky-item-right-imagebox">
-                            <img src="/images/mockup12.webp" className="about-sticky-item-right-image" alt="" />
+                            <Image src="/images/mockup12.webp" className="about-sticky-item-right-image" alt="" />
                         </div>
                     </div>
                 </div>
@@ -178,7 +180,7 @@ const AboutPageSection = () => {
                     </div>
                     <div className="about-sticky-item-right">
                         <div className="about-sticky-item-right-imagebox">
-                            <img src="/images/mockup7.webp" className="about-sticky-item-right-image" alt="" />
+                            <Image src="/images/mockup7.webp" className="about-sticky-item-right-image" alt="" />
                         </div>
                     </div>
                 </div>
@@ -192,7 +194,7 @@ const AboutPageSection = () => {
                     </div>
                     <div className="about-sticky-item-right">
                         <div className="about-sticky-item-right-imagebox">
-                            <img src="/images/mockup11.webp" className="about-sticky-item-right-image" alt="" />
+                            <Image src="/images/mockup11.webp" className="about-sticky-item-right-image" alt="" />
                         </div>
                     </div>
                 </div>

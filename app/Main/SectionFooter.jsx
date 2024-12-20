@@ -3,7 +3,6 @@ import gsap from "gsap";
 import SplitText from "gsap/src/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Image from "next/image";
-import Marquee from "react-fast-marquee";
 import { Instagram, Linkedin, Twitter } from "lucide-react";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
@@ -30,7 +29,7 @@ const SectionFooter = () => {
     <section className="footer">
       <div className="footer-content">
         <div className="footer-content-left" ref={topRef1} >
-          <img src="/images/dwlogonew2.webp" className="footer-logo" alt="" />
+          <Image src="/images/dwlogonew2.webp" className="footer-logo" alt="" width={100} height={100} />
           <h1 className="subheadline white" >Dialedweb</h1>
           <p className="description grey"  >Harnessing Cutting-Edge Visualization Technology to Transform Vision into Tailored Digital Reality</p>
         </div>

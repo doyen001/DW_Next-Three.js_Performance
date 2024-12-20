@@ -2,6 +2,7 @@
 import { useEffect, useLayoutEffect, useState } from 'react';
 import { useProgress } from "@react-three/drei";
 import dynamic from 'next/dynamic';
+import Image from "next/image";
 
 import { ReactLenis, useLenis } from 'lenis/react'
 import { SectionHero } from "./SectionHero";
@@ -63,12 +64,12 @@ const Main = () => {
     <ReactLenis root>
       <div className={`initial-loading-screen ${fadeOut ? "fade-out" : ""}`} >
         <div className="loading-image-box" >
-          <img src="/images/loading.gif" className="loading-image" alt="Loading Image" />
+          <Image src="/images/loading.gif" className="loading-image" alt="Loading Image" width={100} height={100} />
         </div>
       </div>
       <SectionHero />
       <div className="normal-padding" />
-      <SectionShowreel />
+      {/* <SectionShowreel />
       <div className="border-padding">
         <div className="section-border"></div>
       </div>
@@ -85,7 +86,7 @@ const Main = () => {
       <div className="normal-padding" />
       <SectionFlower />
       <div className="normal-padding" />
-      <SectionFooter />
+      <SectionFooter /> */}
     </ReactLenis>
   );
 };

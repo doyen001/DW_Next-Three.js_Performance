@@ -1,11 +1,13 @@
 /* eslint-disable react/jsx-key */
-import React, { Suspense, useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import SplitText from "gsap/src/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { PrevButton, NextButton, usePrevNextButtons} from "./Carousel/EmblaCarouselArrowButtons"
 import useEmblaCarousel from "embla-carousel-react"
 import { Send } from "lucide-react";
+import Image from "next/image";
+
+import { PrevButton, NextButton, usePrevNextButtons} from "./Carousel/EmblaCarouselArrowButtons"
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
@@ -78,7 +80,7 @@ const SectionTestimonials = () => {
                     <div className="testimonials-item" >
                         <div className="testimonials-item-content">
                             <div className="testimonials-item-profile">
-                                <img src="/images/pfp1.webp" alt="" />
+                                <Image src="/images/pfp1.webp" alt="" />
                             </div>
                             <div className="testimonials-item-center">
                                 <p className="big-description white" >Sarah Johnson</p>
@@ -91,7 +93,7 @@ const SectionTestimonials = () => {
                     <div className="testimonials-item" >
                         <div className="testimonials-item-content">
                             <div className="testimonials-item-profile">
-                                <img src="/images/pfp2.webp" alt="" />
+                                <Image src="/images/pfp2.webp" alt="" />
                             </div>
                             <div className="testimonials-item-center">
                                 <p className="big-description white" >David Patel</p>
@@ -104,7 +106,7 @@ const SectionTestimonials = () => {
                     <div className="testimonials-item" >
                         <div className="testimonials-item-content">
                             <div className="testimonials-item-profile">
-                                <img src="/images/pfp1.webp" alt="" />
+                                <Image src="/images/pfp1.webp" alt="" />
                             </div>
                             <div className="testimonials-item-center">
                                 <p className="big-description white" >Emily Carter</p>
@@ -117,7 +119,7 @@ const SectionTestimonials = () => {
                     <div className="testimonials-item" >
                         <div className="testimonials-item-content">
                             <div className="testimonials-item-profile">
-                                <img src="/images/pfp2.webp" alt="" />
+                                <Image src="/images/pfp2.webp" alt="" />
                             </div>
                             <div className="testimonials-item-center">
                                 <p className="big-description white" >Sarah Johnson</p>
@@ -130,7 +132,7 @@ const SectionTestimonials = () => {
                     <div className="testimonials-item" >
                         <div className="testimonials-item-content">
                             <div className="testimonials-item-profile">
-                                <img src="/images/pfp2.webp" alt="" />
+                                <Image src="/images/pfp2.webp" alt="" />
                             </div>
                             <div className="testimonials-item-center">
                                 <p className="big-description white" >David Patel</p>
@@ -143,7 +145,7 @@ const SectionTestimonials = () => {
                     <div className="testimonials-item" >
                         <div className="testimonials-item-content">
                             <div className="testimonials-item-profile">
-                                <img src="/images/pfp1.webp" alt="" />
+                                <Image src="/images/pfp1.webp" alt="" />
                             </div>
                             <div className="testimonials-item-center">
                                 <p className="big-description white" >Emily Carter</p>
@@ -156,7 +158,7 @@ const SectionTestimonials = () => {
                     <div className="testimonials-item" >
                         <div className="testimonials-item-content">
                             <div className="testimonials-item-profile">
-                                <img src="/images/pfp2.webp" alt="" />
+                                <Image src="/images/pfp2.webp" alt="" />
                             </div>
                             <div className="testimonials-item-center">
                                 <p className="big-description white" >Sarah Johnson</p>

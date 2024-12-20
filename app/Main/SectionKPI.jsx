@@ -1,9 +1,8 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import SplitText from "gsap/src/SplitText";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Cone, Globe, Send, User, Zap } from 'lucide-react';
-import Marquee from "react-fast-marquee";
+import { Cone, Globe, User, Zap } from 'lucide-react';
 
 // Register GSAP plugins
 gsap.registerPlugin(SplitText, ScrollTrigger);

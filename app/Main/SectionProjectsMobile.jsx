@@ -1,12 +1,10 @@
 /* eslint-disable react/jsx-key */
 "use client";
-import React, { Suspense, useEffect, useLayoutEffect, useRef, useState } from "react";
-import dynamic from 'next/dynamic'
+import React, {  useEffect,  useRef  } from "react";
 import gsap from "gsap";
 import SplitText from "gsap/src/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import Marquee from "react-fast-marquee";
-import { Hand, Star } from "lucide-react";
+import { Star } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
 import { PrevButton, NextButton, usePrevNextButtons} from "./Carousel/EmblaCarouselArrowButtons"
 import { DotButton, useDotButton } from './Carousel/EmblaCarouselDotButton'

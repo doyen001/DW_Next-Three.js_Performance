@@ -151,7 +151,7 @@ export const ContactPageSection = () => {
               </div>
             </div>
             <div className="contact-content-right opacity-blur" ref={imageWrapperRef} >
-              <img src="/images/dwlogonew2.webp" className="contact-content-right-image" ref={imageRef} alt="" />
+              <img src="/images/dwlogonew2.webp" className="contact-content-right-image" ref={imageRef} alt="" width={100} height={100} />
             </div>
           </div>
         </div>

@@ -4,6 +4,7 @@ import gsap from "gsap";
 import SplitText from "gsap/src/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { Play } from "lucide-react";
+import Image from "next/image";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
@@ -75,19 +76,19 @@ const SectionShowreel = () => {
         </div>
         <div className="showreel-content-row">
           <div className="showreel-content-row-item opacity-blur" ref={showreelItemRef1} >
-            <img src="/logos/awwwards.svg" className="showreel-content-row-item-image" alt="" />
+            <Image src="/logos/awwwards.svg" className="showreel-content-row-item-image" alt="" />
             <div className="showreel-content-row-item-grid" />
           </div>
           <div className="showreel-content-row-item opacity-blur" ref={showreelItemRef2} >
-            <img src="/logos/cssbestui.svg" className="showreel-content-row-item-image" alt="" />
+            <Image src="/logos/cssbestui.svg" className="showreel-content-row-item-image" alt="" />
             <div className="showreel-content-row-item-grid" />
           </div>
           <div className="showreel-content-row-item opacity-blur" ref={showreelItemRef3} >
-            <img src="/logos/cssbestinnovation.svg" className="showreel-content-row-item-image" alt="" />
+            <Image src="/logos/cssbestinnovation.svg" className="showreel-content-row-item-image" alt="" />
             <div className="showreel-content-row-item-grid" />
           </div>
           <div className="showreel-content-row-item opacity-blur" ref={showreelItemRef4} >
-            <img src="/logos/cssbestux.svg" className="showreel-content-row-item-image" alt="" />
+            <Image src="/logos/cssbestux.svg" className="showreel-content-row-item-image" alt="" />
             <div className="showreel-content-row-item-grid" />
           </div>
         </div>
