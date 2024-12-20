@@ -21,15 +21,13 @@ export const SectionHero = () => {
 
   useLayoutEffect(() => {
     if (progress === 100) {
-      const timeout = setTimeout(() => {
-        setPlayAnimation(true);
-      }, 150);
+      setPlayAnimation(true);
     }
   }, [progress]);
 
   // REFS 
   const titleRef = useRef()
-  const descriptionRef = useRef()
+  const descriptionRef = useRef(null)
   const buttonRef1 = useRef()
   const buttonCircleRef1 = useRef()
   const buttonRef2 = useRef()
@@ -38,18 +36,17 @@ export const SectionHero = () => {
   const [showCursor, setShowCursor] = useState(false)
 
   // GSAP ANIMATIONS
-  useEffect(() => {
+  useLayoutEffect(() => {
 
     if (playAnimation) {
-
       gsap.set(titleRef.current, { opacity: 1 })
-      gsap.set(descriptionRef.current, { opacity: 1, filter: 'blur(0px)' });
-
+      descriptionRef.current.style.opacity = 0;
       const titleSplit = new SplitText(titleRef.current, { type: "chars" });
       gsap.fromTo(titleSplit.chars, { 'will-change': 'opacity, transform', filter: 'blur(8px)', opacity: 0, yPercent: 50 }, { delay: 0.4, opacity: 1, filter: 'blur(0px)', yPercent: 0, stagger: 0.02, duration: 0.75, ease: "power1" });
 
       // description text animation
-      gsap.from(descriptionRef.current, { opacity: 0, filter: 'blur(10px)', duration: 0.7, delay: 0.5 });
+      descriptionRef.current.style.transition = 'opacity 3s ease-in-out'; // Smooth transition for 0.5 seconds
+      descriptionRef.current.style.opacity = 1;
 
       // buttons animation
       gsap.to(buttonRef1.current, { delay: 1.1, opacity: 1, filter: 'blur(0px)', duration: 0.5, ease: "power1" })
@@ -137,7 +134,7 @@ export const SectionHero = () => {
                 <div className="hero-titlebox-gradient" />
                 <h1 className="headline hero-headline white" ref={titleRef} >Crafting Digital <br /> Masterpieces</h1>
               </div>
-              <p className="big-description grey opacity-blur" ref={descriptionRef} >Harnessing Cutting-Edge Visualization Technology to Transform Vision into Tailored Digital Reality</p>
+              <p className="big-description grey" style={{ opacity: 0 }} ref={descriptionRef} >Harnessing Cutting-Edge Visualization Technology to Transform Vision into Tailored Digital Reality</p>
             </div>
             <div className="hero-buttons-row">
               <button className="button opacity-blur" ref={buttonRef1} >
@@ -200,7 +197,7 @@ export const SectionHero = () => {
               "/logos/stripe.svg", 
             ].map((src, i) => (
               <div className="hero-content-bottom-item" key={i}>
-                <Image width={100} height={100} src={src} alt={`Marquee item ${i + 1}`} className="hero-content-bottom-image" />
+                <Image width={100} height={100} src={src} alt={`Marquee item ${i + 1}`} priority className="hero-content-bottom-image" />
               </div>
             ))}
           </Marquee>
