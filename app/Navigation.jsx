@@ -36,7 +36,7 @@ export const Navigation = () => {
     <div className="navigation-wrapper">
         <div className="navigation-inside" ref={navigationBar} >
             <div className="navigation-inside-left">
-                <Image src="/images/dwlogonew2.webp" className="navigation-inside-left-image" alt="" width={60} height={33} />
+                <Image src="/images/dwlogonew2.webp" alt="" width={60} height={33} />
             </div>
             <div className="navigation-inside-big" ref={navigationBarCenter} >
                 <p className="small-description white hover-text-white opacity" ref={navigationBarCenterRef1} onClick={() => handleNavigate('/')} >Home</p>

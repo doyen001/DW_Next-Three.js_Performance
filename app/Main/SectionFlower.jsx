@@ -42,7 +42,7 @@ const SectionFlower = () => {
             }
           };
           images = config.urls.map((url, i) => {
-            let img = new Image();
+            let img = new window.Image();
             img.src = url;
             i || (img.onload = updateImage);
             return img;
@@ -118,7 +118,7 @@ const SectionFlower = () => {
             </span>
             <span>
               <div className="flower-content-right-content-item" ref={imageRef1} >
-                <Image src="/images/iphoneoptimized.png" className="flower-content-right-content-item-image" alt="" />
+                <Image src="/images/iphoneoptimized.png" className="flower-content-right-content-item-image" alt="" width={100} height={100}/>
               </div>
             </span>
           </div>
@@ -139,7 +139,7 @@ const SectionFlower = () => {
             </span>
             <span>
               <div className="flower-content-right-content-item" ref={imageRef2} >
-                <Image src="/images/iphoneoptimized.png" className="flower-content-right-content-item-image" alt="" />
+                <Image src="/images/iphoneoptimized.png" className="flower-content-right-content-item-image" alt="" width={100} height={100}/>
               </div>
             </span>
             <span>

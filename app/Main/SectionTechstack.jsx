@@ -205,32 +205,32 @@ const SectionTechstack = () => {
                     <div className="techstack-item-content">
                         <div className="techstack-item-content-column">
                             <div className="techstack-item-content-column-slider">
-                                <Image src="/images/abs.webp" className="techstack-item-content-column-slider-image" alt="" />
+                                <Image src="/images/abs.webp" className="techstack-item-content-column-slider-image" alt="" width={100} height={100}/>
                                 <div className="techstack-item-content-column-slider-carousel" ref={emblaRef} >
                                     <div className="techstack-item-content-column-slider-carousel-row">
                                         <div className="techstack-item-content-column-slider-item">
                                             <div className="techstack-item-content-column-slider-item-child">
-                                                <Image src="/logos/blenderwhite.svg" className="techstack-item-content-column-slider-item-image" alt="" />
+                                                <Image src="/logos/blenderwhite.svg" className="techstack-item-content-column-slider-item-image" alt="" width={100} height={100}/>
                                             </div>
                                         </div>
                                         <div className="techstack-item-content-column-slider-item">
                                             <div className="techstack-item-content-column-slider-item-child">
-                                                <Image src="/logos/ae.svg" className="techstack-item-content-column-slider-item-image" alt="" />
+                                                <Image src="/logos/ae.svg" className="techstack-item-content-column-slider-item-image" alt="" width={100} height={100}/>
                                             </div>
                                         </div>
                                         <div className="techstack-item-content-column-slider-item">
                                             <div className="techstack-item-content-column-slider-item-child">
-                                                <Image src="/logos/photoshop.svg" className="techstack-item-content-column-slider-item-image" alt="" />
+                                                <Image src="/logos/photoshop.svg" className="techstack-item-content-column-slider-item-image" alt="" width={100} height={100}/>
                                             </div>
                                         </div>
                                         <div className="techstack-item-content-column-slider-item">
                                             <div className="techstack-item-content-column-slider-item-child">
-                                                <Image src="/logos/davinciresolvewhite.svg" className="techstack-item-content-column-slider-item-image" alt="" />
+                                                <Image src="/logos/davinciresolvewhite.svg" className="techstack-item-content-column-slider-item-image" alt="" width={100} height={100}/>
                                             </div>
                                         </div>
                                         <div className="techstack-item-content-column-slider-item">
                                             <div className="techstack-item-content-column-slider-item-child">
-                                                <Image src="/logos/houdiniwhite.svg" className="techstack-item-content-column-slider-item-image" alt="" />
+                                                <Image src="/logos/houdiniwhite.svg" className="techstack-item-content-column-slider-item-image" alt="" width={100} height={100}/>
                                             </div>
                                         </div>
                                     </div>
@@ -297,7 +297,7 @@ const SectionTechstack = () => {
                                 <div className="techstack-item-card-content techstack-item-card-content-1">
                                     <div className="techstack-item-card-content-top">
                                         <p className="description white" >Slack</p>
-                                        <Image src="/logos/slack.png" className="techstack-item-card-content-top-image" alt="" />
+                                        <Image src="/logos/slack.png" className="techstack-item-card-content-top-image" alt="" width={100} height={100}/>
                                     </div>
                                     <div className="techstack-item-card-content-bottom">
                                         <p className="small-description grey" >Content draft progress at 75%. Feedback incorporated, updates shared.</p>
@@ -309,7 +309,7 @@ const SectionTechstack = () => {
                                 <div className="techstack-item-card-content techstack-item-card-content-2">
                                     <div className="techstack-item-card-content-top">
                                         <p className="description white" >Gmail</p>
-                                        <Image src="/logos/gmail.png" className="techstack-item-card-content-top-image" alt="" />
+                                        <Image src="/logos/gmail.png" className="techstack-item-card-content-top-image" alt="" width={100} height={100} />
                                     </div>
                                     <div className="techstack-item-card-content-bottom">
                                         <p className="small-description grey" >Development is now 90% complete. Testing schedule shared with all stakeholders.</p>
@@ -321,7 +321,7 @@ const SectionTechstack = () => {
                                 <div className="techstack-item-card-content">
                                     <div className="techstack-item-card-content-top">
                                         <p className="description white" >Notion</p>
-                                        <Image src="/logos/notion.png" className="techstack-item-card-content-top-image" alt="" />
+                                        <Image src="/logos/notion.png" className="techstack-item-card-content-top-image" alt="" width={100} height={100}/>
                                     </div>
                                     <div className="techstack-item-card-content-bottom">
                                         <p className="small-description grey" >Design phase completed successfully. Tasks updated and prepared for review.</p>

@@ -80,7 +80,7 @@ const SectionTestimonials = () => {
                     <div className="testimonials-item" >
                         <div className="testimonials-item-content">
                             <div className="testimonials-item-profile">
-                                <Image src="/images/pfp1.webp" alt="" />
+                                <Image src="/images/pfp1.webp" alt="" width={100} height={100} />
                             </div>
                             <div className="testimonials-item-center">
                                 <p className="big-description white" >Sarah Johnson</p>
@@ -93,7 +93,7 @@ const SectionTestimonials = () => {
                     <div className="testimonials-item" >
                         <div className="testimonials-item-content">
                             <div className="testimonials-item-profile">
-                                <Image src="/images/pfp2.webp" alt="" />
+                                <Image src="/images/pfp2.webp" alt="" width={100} height={100} />
                             </div>
                             <div className="testimonials-item-center">
                                 <p className="big-description white" >David Patel</p>
@@ -106,7 +106,7 @@ const SectionTestimonials = () => {
                     <div className="testimonials-item" >
                         <div className="testimonials-item-content">
                             <div className="testimonials-item-profile">
-                                <Image src="/images/pfp1.webp" alt="" />
+                                <Image src="/images/pfp1.webp" alt="" width={100} height={100}/>
                             </div>
                             <div className="testimonials-item-center">
                                 <p className="big-description white" >Emily Carter</p>
@@ -119,7 +119,7 @@ const SectionTestimonials = () => {
                     <div className="testimonials-item" >
                         <div className="testimonials-item-content">
                             <div className="testimonials-item-profile">
-                                <Image src="/images/pfp2.webp" alt="" />
+                                <Image src="/images/pfp2.webp" alt="" width={100} height={100}/>
                             </div>
                             <div className="testimonials-item-center">
                                 <p className="big-description white" >Sarah Johnson</p>
@@ -132,7 +132,7 @@ const SectionTestimonials = () => {
                     <div className="testimonials-item" >
                         <div className="testimonials-item-content">
                             <div className="testimonials-item-profile">
-                                <Image src="/images/pfp2.webp" alt="" />
+                                <Image src="/images/pfp2.webp" alt="" width={100} height={100}/>
                             </div>
                             <div className="testimonials-item-center">
                                 <p className="big-description white" >David Patel</p>
@@ -145,7 +145,7 @@ const SectionTestimonials = () => {
                     <div className="testimonials-item" >
                         <div className="testimonials-item-content">
                             <div className="testimonials-item-profile">
-                                <Image src="/images/pfp1.webp" alt="" />
+                                <Image src="/images/pfp1.webp" alt="" width={100} height={100}/>
                             </div>
                             <div className="testimonials-item-center">
                                 <p className="big-description white" >Emily Carter</p>
@@ -158,7 +158,7 @@ const SectionTestimonials = () => {
                     <div className="testimonials-item" >
                         <div className="testimonials-item-content">
                             <div className="testimonials-item-profile">
-                                <Image src="/images/pfp2.webp" alt="" />
+                                <Image src="/images/pfp2.webp" alt="" width={100} height={100}/>
                             </div>
                             <div className="testimonials-item-center">
                                 <p className="big-description white" >Sarah Johnson</p>

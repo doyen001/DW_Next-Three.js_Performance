@@ -736,8 +736,6 @@ section {
 }
 
 .loading-image {
-  width: 100%;
-  height: 100%;
   object-fit: contain;
 }
 
@@ -779,11 +777,6 @@ section {
   display: flex;
   align-items: center;
   gap: 0.25vw;
-}
-
-.navigation-inside-left-image {
-  width: auto;
-  height: 3.5vh;
 }
 
 .navigation-inside-right {
@@ -955,11 +948,6 @@ section {
   height: 12.5vw;
   padding: 0 2.5vw;
   padding-right: 2.5vw;
-}
-
-.navigation-inside-left-image {
-  width: auto;
-  height: 7.5vw;
 }
 
 .navigation-inside-big {
