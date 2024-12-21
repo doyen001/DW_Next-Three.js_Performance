@@ -45,7 +45,7 @@ export const SectionHero = () => {
       gsap.fromTo(titleSplit.chars, { 'will-change': 'opacity, transform', filter: 'blur(8px)', opacity: 0, yPercent: 50 }, { delay: 0.4, opacity: 1, filter: 'blur(0px)', yPercent: 0, stagger: 0.02, duration: 0.75, ease: "power1" });
 
       // description text animation
-      descriptionRef.current.style.transition = 'opacity 3s ease-in-out'; // Smooth transition for 0.5 seconds
+      descriptionRef.current.style.transition = 'opacity 5s ease-in-out'; // Smooth transition for 0.5 seconds
       descriptionRef.current.style.opacity = 1;
 
       // buttons animation
