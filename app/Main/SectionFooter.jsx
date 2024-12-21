@@ -29,7 +29,7 @@ const SectionFooter = () => {
     <section className="footer">
       <div className="footer-content">
         <div className="footer-content-left" ref={topRef1} >
-          <Image src="/images/dwlogonew2.webp" className="footer-logo" alt="" width={100} height={100} />
+          <Image src="/images/dwlogonew2.webp" className="footer-logo" alt="" width={54} height={30} />
           <h1 className="subheadline white" >Dialedweb</h1>
           <p className="description grey"  >Harnessing Cutting-Edge Visualization Technology to Transform Vision into Tailored Digital Reality</p>
         </div>

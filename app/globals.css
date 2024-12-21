@@ -831,10 +831,6 @@ section {
   flex-direction: column;
 }
 
-.footer-logo {
-  width: 4vw;
-}
-
 .footer-content-right {
   justify-content: end;
   gap: 5vw;
