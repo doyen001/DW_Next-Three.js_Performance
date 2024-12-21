@@ -20,4 +20,6 @@ export const CustomMaterial = forwardRef<
   );
 });
 
+useTexture.preload("/images/1.jpeg");
+
 CustomMaterial.displayName = "CustomMaterial";
